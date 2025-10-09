@@ -66,7 +66,7 @@ gradlePlugin {
             """.trimIndent()
             tags.set(
                 listOf(
-                    "andromeda", "gradle", "plugin", "kotlin", "utilities"
+                    "andromeda", "pre-built", "kotlin", "utilities"
                 )
             )
         }
