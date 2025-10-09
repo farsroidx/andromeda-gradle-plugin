@@ -31,7 +31,6 @@ farsroidx-andromeda = { id = "ir.farsroidx.andromeda"      , version.ref = "andr
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android)      apply false
-    alias(libs.plugins.kotlin.compose)      apply false
     alias(libs.plugins.farsroidx.andromeda) apply false <--
 }
 ```
