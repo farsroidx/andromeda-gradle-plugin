@@ -11,7 +11,7 @@
       <option name="taskNames">
         <list>
           <option value=":GenerateVersionFile" />
-          <option value=":publish" />
+          <option value=":publishPlugins" />
         </list>
       </option>
       <option name="vmOptions" />
