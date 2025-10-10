@@ -8,7 +8,7 @@ adds reusable Kotlin DSL extensions, and simplifies dependency management for An
 This plugin is designed to save development time by providing ready-to-use pre-build code, custom tasks, 
 and build conventions that can be immediately applied to any project.
 
-### LATEST_VERSION: [![](https://jitpack.io/v/farsroidx/andromeda-gradle-plugin.svg)](https://jitpack.io/#farsroidx/andromeda-gradle-plugin)
+### LATEST_VERSION: [![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/ir.farsroidx.andromeda)](https://plugins.gradle.org/plugin/ir.farsroidx.andromeda)
 
 1. Add dependency into libs.versions.toml:
 ```toml
@@ -22,7 +22,7 @@ andromeda = "🔝LATEST_VERSION🔝" <--
 
 [plugins]
 android-application = { id = "com.android.application"     , version.ref = "agp"       }
-kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin"    }
+android-kotlin      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin"    }
 farsroidx-andromeda = { id = "ir.farsroidx.andromeda"      , version.ref = "andromeda" } <--
 ```
 
@@ -30,7 +30,7 @@ farsroidx-andromeda = { id = "ir.farsroidx.andromeda"      , version.ref = "andr
 ```kotlin
 plugins {
     alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.kotlin.android)      apply false
+    alias(libs.plugins.android.kotlin)      apply false
     alias(libs.plugins.farsroidx.andromeda) apply false <--
 }
 ```
@@ -39,7 +39,7 @@ plugins {
 ```kotlin
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.android.kotlin)
     alias(libs.plugins.farsroidx.andromeda) <--
 }
 
